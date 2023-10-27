@@ -6,7 +6,7 @@
 
 .text
 _start:
-    mov $12, %EBX
+    mov $13, %EBX
     mov $3, %EDX
 #--------------------------
     mov %EBX, %EAX
@@ -20,6 +20,6 @@ _start:
 #| reg | input |  output |
 #+-----+-------+---------+
 #| EAX |   0   |    4    |
-#| EBX |  12   |    3    |
+#| EBX |  13   |    3    |
 #| ECX |   0   |    4    |
-#| EDX |   3   |    0    |
+#| EDX |   3   |    1    |
