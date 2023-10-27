@@ -7,6 +7,7 @@
 .text
 _start:
 	nop
+	#-----------------------
 
 #+-----+-------+---------+
 #| reg | input |  output |
@@ -15,3 +16,5 @@ _start:
 #| EBX |   0   |    0    |
 #| ECX |   0   |    0    |
 #| EDX |   0   |    0    |
+
+# email template: "[Asm] zd 1.5"
