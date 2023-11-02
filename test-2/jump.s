@@ -11,14 +11,14 @@ _start:
 
     cmp %EBX, %EAX    # Compare registers
 
-    je equal          # Jump if Equal
-    jne not_equal     # Jump if Not Equal
+    je equal          # Jump if Equal ***
+    jne not_equal     # Jump if Not Equal ***
     jz zero           # Jump if Zero (ZF set)
     jnz not_zero      # Jump if Not Zero (ZF not set)
-    jl less           # Jump if Less
-    jle less_equal    # Jump if Less or Equal
-    jg greater        # Jump if Greater
-    jge greater_equal # Jump if Greater or Equal
+    jl less           # Jump if Less ***
+    jle less_equal    # Jump if Less or Equal ***
+    jg greater        # Jump if Greater ***
+    jge greater_equal # Jump if Greater or Equal ***
     jc carry          # Jump if Carry Flag set (unsigned)
     jnc no_carry      # Jump if Carry Flag not set (unsigned)
 
