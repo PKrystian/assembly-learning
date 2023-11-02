@@ -37,7 +37,6 @@ greater:
 
 done:
     # Exit the program
-    # mov $1, %EAX
 
 #+-----+-------+---------+
 #| reg | input |  output |
