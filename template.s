@@ -7,7 +7,10 @@
 .text
 _start:
 	nop
-	#-----------------------
+__begin:
+	
+__end: nop
+
 
 #+-----+-------+---------+
 #| reg | input |  output |

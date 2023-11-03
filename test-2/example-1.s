@@ -8,7 +8,7 @@
 _start:
     mov $6, %EAX
     mov $5, %EBX
-
+__begin:
     mov %EAX, %ECX    # Move EAX to ECX (for later use)
     mul %EBX          # Multiply EAX by EBX
     mov %EAX, %EBX    # Move result to EBX
@@ -38,6 +38,7 @@ greater:
 done:
     # Exit the program
     # mov $1, %EAX
+__end: nop
 
 #+-----+-------+---------+
 #| reg | input |  output |
