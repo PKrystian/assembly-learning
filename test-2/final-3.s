@@ -11,21 +11,20 @@ _start:
     mov $8, %ECX
     mov $9, %EDX
 __begin:
-    cmp %EBX, %ECX
-    jle dalej
-    add %EAX, %EBX
-    jmp koniec
+wstecz:
+    cmp %EAX, %EDX
+    jne dalej
+    add %EBX, %ECX
+    dec %EDX
+    jmp wstecz
 dalej:
-    sub %EDX, %EAX
-    dec %EBX
-koniec:
-    inc %EDX
+    inc %EAX
 __end: nop
 
 #+-----+-------+---------+
 #| reg | input |  output |
 #+-----+-------+---------+
-#| EAX |   6   |    6    |
-#| EBX |   7   |   13    |
+#| EAX |   6   |    7    |
+#| EBX |   7   |    7    |
 #| ECX |   8   |    8    |
-#| EDX |   9   |   10    |
+#| EDX |   9   |    9    |
