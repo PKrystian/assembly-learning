@@ -3,10 +3,12 @@
 	# ------
 	# arrays
 	# ------
-
 .text
 _start:
-	nop
+	mov $0, %EAX
+	mov $0, %EBX
+ 	mov $0, %ECX
+  	mov $0, %EDX
 __begin:
 	
 __end: nop
