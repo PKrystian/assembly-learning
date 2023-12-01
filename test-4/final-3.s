@@ -8,7 +8,7 @@ mov $6, %EAX
 mov $7, %EBX
 mov $8, %ECX
 mov $9, %EDX
-call proc
+call _start
 proc: sub %ESP, %EAX
     mov 4(%ESP), %ECX
     mov 8(%ESP), %EDX
