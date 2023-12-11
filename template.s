@@ -4,6 +4,9 @@
 	# arrays
 	# ------
 .text
+	# ------
+	# variables
+	# ------
 _start:
 	mov $0, %EAX
 	mov $0, %EBX
